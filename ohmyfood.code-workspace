@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "Maquettes Ohmyfood/images"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "ohmyfood"
+	}
+}
