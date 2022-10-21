@@ -1,4 +1,4 @@
-.logo{
+.logo {
     align-items: center;
     justify-content: center;
     display: block;
@@ -8,11 +8,31 @@
     display: flex;
     justify-content: center;
     color: black;
+    padding-bottom: 15px;
+    padding-top:15px;
+    background-color: linear-gradient (to top #9b9b9b #F2F2F2);
+}
+
+input{
+    border:transparent;
+    text-align: center;
     align-items: center;
+}
+
+h1{
+    font-family:'Shrikhand' 'sans serif';
+    color:black;
+    margin-bottom: 0;
+}
+
+.firstp{
+    font-family: 'Roboto' 'sans serif';
+    font-weight: bold;
+    font-size: x-large;
     text-align: center;
 }
 
-p {
+.secondp{
     font-family: 'Roboto' 'sans serif';
     text-align: center;
 }
@@ -26,8 +46,6 @@ p {
     background: linear-gradient(to bottom right, #FF79DA, #9356DC);
     border: transparent;
     margin-top: 25px;
-    margin-bottom: 45px;
-
 }
 
 body {
@@ -36,11 +54,12 @@ body {
 
 /*Explorer nos restaurants*/
 .reservation {
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
     gap: 2rem;
     align-items: center;
     text-align: center;
     padding-top: 5px;
+    padding-bottom: 30px;
 }
 
 h1 {
@@ -55,12 +74,22 @@ h1 {
     background-color: white;
     display: block;
     margin-top: 35px;
+    padding-right: 10px;
 }
 
-ol {
+.threefilters {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+@media screen and (max-width:768px) {
+    .threefilters {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 li {
@@ -75,9 +104,12 @@ li {
     padding: 10px 20px;
     border-radius: 10px 5px;
     background-color: #F2F2F2;
+    gap: 1rem;
 }
 
-.btnfonction:hover {}
+.btnfonction:hover {
+    background-color:#9356DC ;
+ }
 
 p {
     color: black;
@@ -86,12 +118,17 @@ p {
 .number {
     background-color: #9356DC;
     color: white;
-    border-radius: 50px;
-    padding: 10px 15px;
+    border-radius: 30px;
+    padding: 4px 9px;
+    position: absolute;
+    margin-left: -4%;
+    margin-top: 7%;
 }
 
 .icon {
-    color: grey;
+    color: #535252;
+    border:none;
+    font-size:medium;
     justify-content: space-around;
 }
 
@@ -99,11 +136,18 @@ p {
     color: #9356DC
 }
 
+.textfonction{
+    color: black;
+    font-family:'Roboto' 'sans serif';
+    font-size: 15px;
+}
+
 /*Restaurant*/
 .restaurants {
     background-color: #F2F2F2;
     display: block;
-    margin-top: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 h2 {
@@ -111,49 +155,92 @@ h2 {
     font-family: 'Roboto' 'sans serif';
     text-align: left;
     font-weight: bold;
-    padding-top: 15px;
+    padding-left:5px;
 }
 
 .cardrestaurant {
     gap: 2rem;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     width: 90%;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin: 15px 10px 10px 15px;
 }
 
-.choicerestaurant{
+.choicerestaurant {
     background-color: white;
     border-radius: 25px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-decoration: none;
+    justify-content: space-around;
 }
-.imgcard{
+
+.imgcard {
     width: 100%;
     aspect-ratio: 2/1;
     border-radius: 25px 25px 0px 0px;
 }
 
-.emptyheart{
+.emptyheart {
     display: flex;
-    justify-content: flex-end;
+    margin-right: 5px;
+    border:none;
+    background-color: white;
+    color: #535252;
+    font-size: large;
 }
+
+.zonetext {
+    font-family: 'Roboto' 'sans serif';
+    text-decoration: none;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+p {
+    text-align: left;
+}
+
 
 /*Footer*/
 footer {
-    background-color: grey;
+    background-color: rgb(107, 107, 107);
     color: white;
     justify-content: flex-start;
     text-align: left;
+    padding:20px;
+}
+
+h4{
+    font-family:'Shrikhand' 'sans serif';
+    font-size: x-large;
+}
+
+.ulfooter{
+    padding:0;
+}
+
+.listfooter{
+    display:flex;
+    list-style-type: none;
 }
 
 .footer-icon {
     color: white;
     align-items: flex-start;
+    background-color: transparent;
+    border:none;
+    font-size: large;
 }
 
 .textfooter {
     color: white;
-    justify-content: flex-start;
-    text-align: left;
+    text-decoration: none;
     align-items: flex-start;
 }
