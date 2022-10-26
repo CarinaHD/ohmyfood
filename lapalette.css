@@ -1,0 +1,55 @@
+body{
+    align-items:center;
+    display: flex;
+    justify-content: center;
+}
+
+.return{
+    display: flex;
+}
+
+h1{
+    font-family: 'Shrikhand', 'cursive';
+    display: flex;
+}
+
+.fa-arrow-left:hover{
+    color: #9356DC;
+}
+.img-restaurant{
+    width: 100%;
+    aspect-ratio: 2/1;
+    object-fit: cover;
+}
+
+.title-restaurant{
+    display: flex;
+    font-family: 'Shrikhand', 'cursive';
+}
+
+.emptyheart{
+    display: flex;
+}
+
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-entree{
+    display:flex;
+    flex-direction: column;
+    font-family: 'Roboto Flex', 'sans serif';
+}
+
+.menu-plats{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto Flex', 'sans serif';
+}
+
+.menu-desserts{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto Flex', 'sans serif';
+}
