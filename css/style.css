@@ -19,10 +19,14 @@ input {
     align-items: center;
 }
 
-h1 {
+.big-title {
     font-family: 'Shrikhand', 'cursive';
     color: black;
     margin-bottom: 0;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
 }
 
 .firstp {
@@ -44,6 +48,8 @@ h1 {
 
 .explore {
     font-family: 'Roboto Flex', 'sans serif';
+    font-size: 16px;
+    text-decoration: none;
     text-align: center;
     padding: 20px 50px;
     border-radius: 50px;
@@ -51,6 +57,11 @@ h1 {
     background: linear-gradient(to bottom right, #FF79DA, #9356DC);
     border: transparent;
     margin-top: 25px;
+    box-shadow: grey 0px 8px 10px -5px;
+    cursor:pointer;
+}
+.explore:hover{
+    opacity: 0.5;
 }
 
 body {
@@ -67,19 +78,12 @@ body {
     padding-bottom: 30px;
 }
 
-h1 {
-    font-family: 'Roboto Flex', 'sans serif';
-    justify-content: center;
-    text-align: center;
-    font-weight: bold;
-}
-
 /*Fonctionnement*/
 .filterfonctionnement {
     background-color: white;
     display: block;
     margin-top: 35px;
-    padding-right: 10px;
+    padding-right: 30px;
     padding-left: 25px;
 }
 
@@ -111,8 +115,8 @@ li {
 
 .btnfonction:hover {
     background-color: #9356DC;
-    opacity: 0.5;
-    filter: alpha (opacity=100);
+    opacity: 0.4;
+    
 }
 
 p {
@@ -138,14 +142,17 @@ p {
 }
 
 .icon:hover {
-    color: #9356DC;
     background-color: transparent;
+    color:black;
+    cursor:pointer;
 }
 
 .textfonction {
     color: black;
     font-family: 'Roboto Flex', 'sans serif';
     font-size: 15px;
+    cursor: pointer;
+    opacity: 1;
 }
 
 /*Restaurant*/
@@ -155,7 +162,7 @@ p {
     padding: 25px;
 }
 
-.Fonctionnement{
+.Fonctionnement {
     color: black;
     font-family: 'Roboto Flex', 'sans serif';
     text-align: left;
@@ -221,7 +228,7 @@ p {
 
 h3 {
     font-weight: bold;
-    color:black;
+    color: black;
 }
 
 p {
@@ -231,7 +238,7 @@ p {
 
 /*Footer*/
 footer {
-    background-color: rgb(107, 107, 107);
+    background-color: #5e5b5b;
     color: white;
     justify-content: flex-start;
     text-align: left;
@@ -245,6 +252,10 @@ h4 {
 
 .ulfooter {
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .listfooter {

@@ -1,0 +1,172 @@
+@use 'components/cards';
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&family=Shrikhand&display=swap');
+
+
+h1 {
+    font-family: 'Shrikhand', 'cursive';
+    display: block;
+}
+
+button{
+    display: flex;
+    border: none;
+    background: transparent;
+    padding: 25px 0;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.title-restaurant {
+    font-family: 'Roboto Flex', 'sans serif';
+    font-size: 25px;
+}
+
+.title-menu {
+    font-family: 'Roboto flex';
+    font-weight: lighter;
+    border-bottom: 3px solid #99E2D0;
+    width: 18%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body {
+    align-items: center;
+    justify-content: center;
+}
+
+.return {
+    display: flex;
+    cursor: pointer;
+}
+
+.title {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.big-title {
+    font-family: 'Shrikhand', 'cursive';
+    color: black;
+    margin-bottom: 0;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+.fa-arrow-left:hover {
+    color: #9356DC;
+}
+
+.img-restaurant {
+    width: 100%;
+    aspect-ratio: 2/1;
+    object-fit: cover;
+}
+
+.title-restaurant {
+    display: flex;
+    font-family: 'Shrikhand', 'cursive';
+}
+
+.menu-list {
+    display:flex;
+    flex-wrap: wrap;
+    border-radius: 40px 40px 0 0;
+    background-color: #F2F2F2;
+    z-index: 1;
+    position:relative;
+    margin-top: -40px;
+    padding-left: 15px;
+    gap: 1rem;
+}
+
+.menulegend {
+    background: white;
+    border-radius: 20px;
+    padding: 5px 15px;
+    margin: 10px 10px 10px 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.textlegend {
+    font-weight: lighter;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.price {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-weight: bold;
+}
+
+.fa-circle-check{
+    display: flex;
+    justify-content: center;
+    background-color: #99E2D0;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+.order {
+    font-family: 'Roboto' 'sans serif';
+    text-align: center;
+    text-decoration: none;
+    padding: 20px 40px;
+    border-radius: 50px;
+    color: white;
+    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    box-shadow: grey 0px 8px 10px -5px;
+    margin: 0 25px 25px 35px;
+    cursor: pointer;
+}
+
+/*Footer*/
+footer {
+    background-color: #5e5b5b;
+    color: white;
+    text-align: left;
+    padding: 20px;
+}
+
+h4 {
+    font-family: 'Shrikhand', 'sans serif';
+    font-size: x-large;
+}
+
+.ulfooter {
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: centers;
+}
+
+/*à revoir pour la responsive de mobile à tablette
+@media screen and (min-width:768){
+    display: flex;   
+}*/
+
+.listfooter {
+    display: flex;
+    list-style-type: none;
+}
+
+.footer-icon {
+    color: white;
+    align-items: flex-start;
+    background-color: transparent;
+    border: none;
+    font-size: large;
+}
+
+.textfooter {
+    color: white;
+    text-decoration: none;
+    align-items: flex-start;
+}
