@@ -14,6 +14,8 @@ button{
     padding: 25px 0;
     font-size: 20px;
     cursor: pointer;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .title-restaurant {
@@ -36,22 +38,26 @@ body {
 }
 
 .return {
-    display: flex;
     cursor: pointer;
+    color: black;
+    margin-top: 5px;
+    justify-content: flex-start;
 }
 
 .title {
-    justify-content: space-between;
+    display: flex;
     align-items: center;
+
 }
 
 .big-title {
     font-family: 'Shrikhand', 'cursive';
     color: black;
-    margin-bottom: 0;
+    margin: 0;
     justify-content: center;
     text-align: center;
     font-weight: bold;
+    font-size: 40px;
 }
 
 .fa-arrow-left:hover {
@@ -64,9 +70,13 @@ body {
     object-fit: cover;
 }
 
-.title-restaurant {
+.title-restaurant-header{
     display: flex;
+}
+
+.title-restaurant {
     font-family: 'Shrikhand', 'cursive';
+    justify-content: flex-start;
 }
 
 .menu-list {
@@ -81,7 +91,12 @@ body {
     gap: 1rem;
 }
 
+/*.menu{
+    display: flex;
+}*/
+
 .menulegend {
+    display: flex;
     background: white;
     border-radius: 20px;
     padding: 5px 15px;
@@ -101,6 +116,17 @@ body {
     justify-content: flex-end;
     align-items: flex-end;
     font-weight: bold;
+}
+
+.checkbutton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: white;
+    font-size: 35px;
+    margin-right:-3rem;
+    overflow: hidden;
 }
 
 .fa-circle-check{
@@ -125,6 +151,9 @@ a{
     box-shadow: grey 0px 8px 10px -5px;
     margin: 0 25px 25px 35px;
     cursor: pointer;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
 }
 
 /*Footer*/
@@ -169,4 +198,12 @@ h4 {
     color: white;
     text-decoration: none;
     align-items: flex-start;
+    margin:16px 0px;
+}
+@media (max-width:768px) {
+    .ulfooter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
