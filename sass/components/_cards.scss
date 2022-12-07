@@ -1,23 +1,13 @@
-.menu-entree {
-    display: flex;
-    flex-direction: column;
-    font-family: 'Roboto Flex', 'sans serif';
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
+/*.sousmenu{
+    
+}*/
 
-.menu-plats {
+.all-menu {
     display: flex;
     flex-direction: column;
     font-family: 'Roboto Flex', 'sans serif';
+    white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-}
-
-.menu-desserts {
-    display: flex;
-    flex-direction: column;
-    font-family: 'Roboto Flex', 'sans serif';
-    text-overflow: ellipsis;
-    overflow: hidden;
+    width:70%;
 }

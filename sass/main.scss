@@ -7,15 +7,15 @@ h1 {
     display: block;
 }
 
-button{
-    display: flex;
+button {
     border: none;
     background: transparent;
     padding: 25px 0;
     font-size: 20px;
     cursor: pointer;
-    justify-content: flex-end;
     align-items: center;
+    position: absolute;
+    left: 95%;
 }
 
 .title-restaurant {
@@ -40,14 +40,14 @@ body {
 .return {
     cursor: pointer;
     color: black;
-    margin-top: 5px;
     justify-content: flex-start;
+    position:relative;
+    top:35px;
 }
 
 .title {
-    display: flex;
     align-items: center;
-
+    justify-content: center;
 }
 
 .big-title {
@@ -70,45 +70,58 @@ body {
     object-fit: cover;
 }
 
-.title-restaurant-header{
+.title-restaurant-header {
     display: flex;
 }
 
 .title-restaurant {
     font-family: 'Shrikhand', 'cursive';
-    justify-content: flex-start;
+    margin-left: 25px;
 }
 
 .menu-list {
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     border-radius: 40px 40px 0 0;
     background-color: #F2F2F2;
     z-index: 1;
-    position:relative;
+    position: relative;
     margin-top: -40px;
     padding-left: 15px;
     gap: 1rem;
 }
 
-/*.menu{
+.menu {
     display: flex;
-}*/
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 .menulegend {
+    width: 75%;
     display: flex;
     background: white;
     border-radius: 20px;
-    padding: 5px 15px;
+    padding: 0 15px;
     margin: 10px 10px 10px 0;
-    text-overflow: ellipsis;
     overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    gap: 1rem;
+}
+
+.menulegend-item {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .textlegend {
     font-weight: lighter;
-    text-overflow: ellipsis;
     overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .price {
@@ -118,27 +131,33 @@ body {
     font-weight: bold;
 }
 
-.checkbutton{
+.checkbutton {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
-    background-color: white;
+    background-color: #99E2D0;
     font-size: 35px;
-    margin-right:-3rem;
     overflow: hidden;
+    width: 50%;
+    position: relative;
+    right: -5%;
 }
 
-.fa-circle-check{
+.fa-circle-check {
     display: flex;
     justify-content: center;
     background-color: #99E2D0;
     color: white;
 }
 
-a{
+a {
     text-decoration: none;
+    justify-content: center;
 }
+
+/*.button-order{
+    justify-content: center;
+}*/
 
 .order {
     font-family: 'Roboto' 'sans serif';
@@ -151,8 +170,6 @@ a{
     box-shadow: grey 0px 8px 10px -5px;
     margin: 0 25px 25px 35px;
     cursor: pointer;
-    display: flex;
-    flex-direction:column;
     justify-content: center;
 }
 
@@ -198,8 +215,9 @@ h4 {
     color: white;
     text-decoration: none;
     align-items: flex-start;
-    margin:16px 0px;
+    margin: 16px 0px;
 }
+
 @media (max-width:768px) {
     .ulfooter {
         display: flex;
