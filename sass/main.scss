@@ -14,9 +14,10 @@ button {
     font-size: 20px;
     cursor: pointer;
     align-items: center;
-    position: absolute;
-    left: 95%;
+    position: relative;
+    margin-right: 5%;
 }
+
 
 .title-restaurant {
     font-family: 'Roboto Flex', 'sans serif';
@@ -27,7 +28,7 @@ button {
     font-family: 'Roboto flex';
     font-weight: lighter;
     border-bottom: 3px solid #99E2D0;
-    width: 18%;
+    width: 8%;
     display: flex;
     flex-wrap: wrap;
 }
@@ -49,7 +50,7 @@ body {
     align-items: center;
     justify-content: center;
 }
-
+                    /*titre ohmyfood!*/
 .big-title {
     font-family: 'Shrikhand', 'cursive';
     color: black;
@@ -63,7 +64,7 @@ body {
 .fa-arrow-left:hover {
     color: #9356DC;
 }
-
+                    /*image du restaurant*/
 .img-restaurant {
     width: 100%;
     aspect-ratio: 2/1;
@@ -72,15 +73,42 @@ body {
 
 .title-restaurant-header {
     display: flex;
+    justify-content: space-between;
 }
 
 .title-restaurant {
     font-family: 'Shrikhand', 'cursive';
-    margin-left: 25px;
+    padding-left: 25px;
 }
 
+.btnheart {
+    position: absolute;
+    right: 50px;
+    border: none;
+    font-size: x-large;
+    align-items: center;
+}
+
+.emptyheart{
+    position:absolute;
+}
+
+.fullheart{
+    position:absolute;
+    opacity: 0; 
+    transition: all 2s;  
+        }
+
+.fullheart:hover{
+    opacity:1;
+    color:transparent;
+    background-image:linear-gradient(to bottom right, #FF79DA, #9356DC);
+    background-clip:text;
+    -webkit-background-clip: text;
+        }
+
 .menu-list {
-    display: flex;
+    
     flex-wrap: wrap;
     justify-content: center;
     border-radius: 40px 40px 0 0;
@@ -96,6 +124,11 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.sousmenu{
+    width:90%;
+    height:50%;
 }
 
 .menulegend {
@@ -114,6 +147,7 @@ body {
 .menulegend-item {
     width: 100%;
     overflow: hidden;
+    white-space: nowrap;
     text-overflow: ellipsis;
 }
 
@@ -139,8 +173,10 @@ body {
     font-size: 35px;
     overflow: hidden;
     width: 50%;
+    margin: -10px -190px -10px 0px;
     position: relative;
     right: -5%;
+    transition: 0.5s ease-in;
 }
 
 .fa-circle-check {
@@ -150,14 +186,28 @@ body {
     color: white;
 }
 
+.circle-check{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: white;
+    width: 25px;
+    height: 25px;
+    font-size: 18px;
+}
+
 a {
     text-decoration: none;
+    text-align: center;
     justify-content: center;
 }
 
-/*.button-order{
+.button-order{
+    display: flex;
     justify-content: center;
-}*/
+    align-items: center;
+}
 
 .order {
     font-family: 'Roboto' 'sans serif';
@@ -171,12 +221,14 @@ a {
     margin: 0 25px 25px 35px;
     cursor: pointer;
     justify-content: center;
+    align-items: center;
 }
 
 /*Footer*/
 footer {
     background-color: #5e5b5b;
     color: white;
+    justify-content: flex-start;
     text-align: left;
     padding: 20px;
 }
@@ -188,15 +240,11 @@ h4 {
 
 .ulfooter {
     padding: 0;
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: centers;
+    align-items: center;
 }
-
-/*à revoir pour la responsive de mobile à tablette
-@media screen and (min-width:768){
-    display: flex;   
-}*/
 
 .listfooter {
     display: flex;

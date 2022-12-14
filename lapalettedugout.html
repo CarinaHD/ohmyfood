@@ -37,7 +37,10 @@
 
         <section class="title-restaurant-header">
             <h1 class="title-restaurant">La palette du goût</h1>
-            <button><i class="fa-regular fa-heart"></i></button>
+            <button class="btnheart">
+                <i class="fa-regular fa-heart emptyheart"></i>
+                <i class="fa-solid fa-heart fullheart"></i>
+            </button>
         </section>
         <section class="menu">
             <!--ENTREES-->
@@ -51,7 +54,10 @@
                         </div>
                         <p class="price">25€</p>
                         <div class="checkbutton">
-                            <i class="fa-solid fa-circle-check"></i>
+                            <div class="circle-check">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+
                         </div>
                     </div>
                     <div class="menulegend">
@@ -94,8 +100,8 @@
                         <div class="menulegend-item">
                             <h3>Parmentier de queue de boeuf</h3>
                             <p class="textlegend">A la truffe noire sur sa purée de panais</p>
-                            <p class="price">35€</p>
                         </div>
+                        <p class="price">35€</p>
                         <div class="checkbutton">
                             <i class="fa-solid fa-circle-check"></i>
                         </div>
@@ -104,8 +110,9 @@
                         <div class="menulegend-item">
                             <h3>Filet de Turbot</h3>
                             <p class="textlegend">Aux agrumes</p>
-                            <p class="price">44€</p>
+
                         </div>
+                        <p class="price">44€</p>
                         <div class="checkbutton">
                             <i class="fa-solid fa-circle-check"></i>
                         </div>
@@ -120,8 +127,8 @@
                         <div class="menulegend-item">
                             <h3>Paris-Brest</h3>
                             <p class="textlegend">Revisité</p>
-                            <p class="price">18€</p>
                         </div>
+                        <p class="price">18€</p>
                         <div class="checkbutton">
                             <i class="fa-solid fa-circle-check"></i>
                         </div>
@@ -130,8 +137,8 @@
                         <div class="menulegend-item">
                             <h3>Macaron au chocolat d'exception</h3>
                             <p class="textlegend">Et glace à la vanille de Madagascar</p>
-                            <p class="price">22€</p>
                         </div>
+                        <p class="price">22€</p>
                         <div class="checkbutton">
                             <i class="fa-solid fa-circle-check"></i>
                         </div>
@@ -140,8 +147,8 @@
                         <div class="menulegend-item">
                             <h3>Mousse au chocolat</h3>
                             <p class="textlegend">Au piment d'espelette et à la truffe noire</p>
-                            <p class="price">23€</p>
                         </div>
+                        <p class="price">23€</p>
                         <div class="checkbutton">
                             <i class="fa-solid fa-circle-check"></i>
                         </div>
@@ -149,10 +156,10 @@
                 </section>
             </div>
         </section>
-    
+
         <!--COMMANDER-->
         <nav class="button-order">
-            <a href=""><button class="order">Commander</button></a>
+            <button class="order">Commander</button>
         </nav>
     </main>
     <!--FOOTER-->

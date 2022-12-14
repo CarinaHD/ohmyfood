@@ -1,0 +1,49 @@
+/*Footer*/
+footer {
+    background-color: #5e5b5b;
+    color: white;
+    justify-content: flex-start;
+    text-align: left;
+    padding: 20px;
+}
+
+h4 {
+    font-family: 'Shrikhand', 'sans serif';
+    font-size: x-large;
+}
+
+.ulfooter {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.listfooter {
+    display: flex;
+    list-style-type: none;
+}
+
+.footer-icon {
+    color: white;
+    align-items: flex-start;
+    background-color: transparent;
+    border: none;
+    font-size: large;
+}
+
+.textfooter {
+    color: white;
+    text-decoration: none;
+    align-items: flex-start;
+    margin: 16px 0px;
+}
+
+@media (max-width:768px) {
+    .ulfooter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

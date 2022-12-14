@@ -21,24 +21,26 @@
 </head>
 
 <body>
+    <!--spinner chargement de la page-->
     <div class="loading-spinner">
-        <div class="load">ohmyfood
+        <p class="fade">ohmyfood
+        </p>
     </div>
-    </div>
+    <!--en-tête-->
     <header>
         <h1 class="big-title">ohmyfood</h1>
     </header>
-    <section class="location">
+    <div class="location">
         <i class="fa-solid fa-location-dot"></i>
         <form method="post" action="traitement.php">
             <input type="text" value="Paris, Belleville">
         </form>
-    </section>
-    <section class="reservation">
+    </div>
+    <div class="reservation">
         <p class="firstp">Réservez le menu qui<br>vous convient</p>
         <p class="secondp">Découvrez des restaurants d'exception,<br>sélectionnés par nos soins.</p>
-        <button class="btn-explore"><a class="explore" href="">Explorer nos restaurants</a></button>
-    </section>
+        <button class="btn-explore">Explorer nos restaurants</button>
+    </div>
     <!--select filters-->
     <section class="filterfonctionnement">
         <h2 class="Fonctionnement">Fonctionnement</h2>
@@ -54,14 +56,18 @@
                 <li class="secondchoice">
                     <div class="btnfonction">
                         <span class="number">2</span>
-                        <button class="icon"><i class="fa-solid fa-list-ul"></i></button>
+                        <button class="icon">
+                            <i class="fa-solid fa-list-ul"></i>
+                        </button>
                         <p class="textfonction">Composez votre menu</p>
                     </div>
                 </li>
                 <li class="thirdchoice">
                     <div class="btnfonction">
                         <span class="number">3</span>
-                        <button class="icon"><i class="fa-solid fa-store"></i></button>
+                        <button class="icon">
+                            <i class="fa-solid fa-store"></i>
+                        </button>
                         <p class="textfonction">Dégustez au restaurant</p>
                     </div>
                 </li>
@@ -79,9 +85,12 @@
                     <h3>La palette du goût</h3>
                     <p>Ménilmontant</p>
                 </div>
-                <button class="emptyheart"><i class="fa-regular fa-heart"></i></button>
-                <!--<button class="fullheart"><i class="fa-solid fa-heart"></i></button>-->
             </a>
+            <button class="btnheart">
+                <i class="fa-regular fa-heart emptyheart"></i>
+                <i class="fa-solid fa-heart fullheart"></i>
+            </button>
+
             <a class="choicerestaurant" href="#">
                 <div class="new">Nouveau</div>
                 <img class="imgcard" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="photo">
@@ -89,18 +98,24 @@
                     <h3>La note enchantée</h3>
                     <p>Charonne</p>
                 </div>
-                <button class="emptyheart"><i class="fa-regular fa-heart"></i></button>
-                <!--<button class="fullheart"><i class="fa-solid fa-heart"></i></button>-->
             </a>
+            <button class="btnheart">
+                <i class="fa-regular fa-heart emptyheart"></i>
+                <i class="fa-solid fa-heart fullheart"></i>
+            </button>
+
             <a class="choicerestaurant" href="#">
                 <img class="imgcard" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="photo">
                 <div class="zonetext">
                     <h3>A la française</h3>
                     <p>Cité Rouge</p>
                 </div>
-                <button class="emptyheart"><i class="fa-regular fa-heart"></i></button>
-                <!--<button class="fullheart"><i class="fa-solid fa-heart"></i></button>-->
             </a>
+            <button class="btnheart">
+                <i class="fa-regular fa-heart emptyheart"></i>
+                <i class="fa-solid fa-heart fullheart"></i>
+            </button>
+
             <a class="choicerestaurant" href="#">
                 <img class="imgcard" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
                     alt="photo">
@@ -108,9 +123,12 @@
                     <h3>La délice des sens</h3>
                     <p>Folie-Méricourt</p>
                 </div>
-                <button class="emptyheart"><i class="fa-regular fa-heart"></i></button>
-                <!--<button class="fullheart"><i class="fa-solid fa-heart"></i></button>-->
             </a>
+            <button class="btnheart">
+                <i class="fa-regular fa-heart emptyheart"></i>
+                <i class="fa-solid fa-heart fullheart"></i>
+            </button>
+
         </div>
     </section>
     <!--Bas de page Footer-->
