@@ -108,9 +108,9 @@ body {
     position: absolute;
     opacity: 1;
     color: #9356DC;
-    /*background-color:linear-gradient(to bottom #9356DC,#FF79DA, );
+    background:linear-gradient(to bottom #9356DC,#FF79DA );
     background-clip:text;
-    -webkit-background-clip:text;*/
+    -webkit-background-clip:text;
     transition: all 2s linear 0s;
 }
 
@@ -150,17 +150,22 @@ body {
     margin: 10px 10px 10px 0;
     box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 10%);
     animation-name: slide-top;
-    animation-delay: 250ms ;
-    animation-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940), both;
+    animation-delay: 2500ms ;
+    /*animation-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);*/
+    animation-fill-mode: both;
 }
 
 @keyframes slide-top {
     0% {
         transform: translateY(50%);
-        opacity: 0;
+        opacity: 0.2;
     }
+50% {
+    transform: translateY(35%);
+        opacity: 0.5;
+}
     100% {
-        transform: translateY(0%);
+        transform: translateY(0);
         opacity: 1;
     }
 }
