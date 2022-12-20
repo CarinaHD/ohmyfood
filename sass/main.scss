@@ -34,23 +34,24 @@ button {
 }
 
 body {
-    align-items: center;
-    justify-content: center;
+    margin: 0;
+
 }
 
 .return {
     cursor: pointer;
     color: black;
     justify-content: flex-start;
-    position:relative;
-    top:35px;
+    position: relative;
+    top: 35px;
 }
 
 .title {
     align-items: center;
     justify-content: center;
 }
-                    /*titre ohmyfood!*/
+
+/*titre ohmyfood!*/
 .big-title {
     font-family: 'Shrikhand', 'cursive';
     color: black;
@@ -64,7 +65,8 @@ body {
 .fa-arrow-left:hover {
     color: #9356DC;
 }
-                    /*image du restaurant*/
+
+/*image du restaurant*/
 .img-restaurant {
     width: 100%;
     aspect-ratio: 2/1;
@@ -77,38 +79,44 @@ body {
 }
 
 .title-restaurant {
-    font-family: 'Shrikhand', 'cursive';
+    font-family: 'Shrikhand','cursive';
     padding-left: 25px;
 }
 
-.btnheart {
+.emptyheart {
     position: absolute;
     right: 50px;
+    top: 25px;
     border: none;
     font-size: x-large;
     align-items: center;
+    cursor: pointer;
 }
 
-.emptyheart{
-    position:absolute;
+.fullheart {
+    position: absolute;
+    right: 50px;
+    top: 25px;
+    border: none;
+    font-size: x-large;
+    align-items: center;
+    cursor:pointer;
+    color: transparent;
 }
 
-.fullheart{
-    position:absolute;
-    opacity: 0; 
-    transition: all 2s;  
-        }
-
-.fullheart:hover{
-    opacity:1;
-    color:transparent;
-    background-image:linear-gradient(to bottom right, #FF79DA, #9356DC);
+.fullheart :hover {
+    position: absolute;
+    opacity: 1;
+    color: #9356DC;
+    /*background-color:linear-gradient(to bottom #9356DC,#FF79DA, );
     background-clip:text;
-    -webkit-background-clip: text;
-        }
+    -webkit-background-clip:text;*/
+    transition: all 2s linear 0s;
+}
+
 
 .menu-list {
-    
+
     flex-wrap: wrap;
     justify-content: center;
     border-radius: 40px 40px 0 0;
@@ -126,9 +134,9 @@ body {
     justify-content: center;
 }
 
-.sousmenu{
-    width:90%;
-    height:50%;
+.sousmenu {
+    width: 90%;
+    height: 50%;
 }
 
 .menulegend {
@@ -137,11 +145,24 @@ body {
     background: white;
     border-radius: 20px;
     padding: 0 15px;
-    margin: 10px 10px 10px 0;
+    cursor: pointer;
     overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    gap: 1rem;
+    margin: 10px 10px 10px 0;
+    box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 10%);
+    animation-name: slide-top;
+    animation-delay: 250ms ;
+    animation-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940), both;
+}
+
+@keyframes slide-top {
+    0% {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
 }
 
 .menulegend-item {
@@ -149,6 +170,9 @@ body {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+        &:hover {
+        transform: translate (100%)
+    }
 }
 
 .textlegend {
@@ -176,7 +200,7 @@ body {
     margin: -10px -190px -10px 0px;
     position: relative;
     right: -5%;
-    transition: 0.5s ease-in;
+    transition: transform 0.5s ease-in;
 }
 
 .fa-circle-check {
@@ -186,7 +210,7 @@ body {
     color: white;
 }
 
-.circle-check{
+.circle-check {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -197,20 +221,26 @@ body {
     font-size: 18px;
 }
 
+@keyframes .circle-check {
+    transform: scale (.1);
+    transform: rotate(-90deg);
+    transition: tranform 330ms ease-in-out;
+}
+
 a {
     text-decoration: none;
     text-align: center;
     justify-content: center;
 }
 
-.button-order{
+.button-order {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .order {
-    font-family: 'Roboto' 'sans serif';
+    font-family: 'Roboto flex','sans serif';
     text-align: center;
     text-decoration: none;
     padding: 20px 40px;
@@ -222,6 +252,14 @@ a {
     cursor: pointer;
     justify-content: center;
     align-items: center;
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 400ms;
+
+    &:hover {
+        transform: scale(1.15)
+    }
+
 }
 
 /*Footer*/

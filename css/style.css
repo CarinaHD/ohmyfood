@@ -1,6 +1,6 @@
 /*loader-spinner*/
 .loading-spinner {
-    inset:0;   
+    inset: 0;
     background: linear-gradient(180deg, #cbcbcb -1%, #eaeaea 7%);
     font-family: 'Shrikhand', sans-serif;
     font-size: 450%;
@@ -12,6 +12,8 @@
     display: inline-block;
     transition: all 3s;
     animation: fade 0.01s 3s both;
+    display: inline;
+    vertical-align: middle;
 }
 
 @keyframes fade {
@@ -21,6 +23,7 @@
 
     100% {
         opacity: 0;
+        z-index: -10000;
     }
 }
 
@@ -28,27 +31,25 @@
     display: inline;
     vertical-align: middle;
     position: relative;
+    top: 40vh;
     margin-top: 30%;
     border: 5px solid #99E2D0;
     padding: 15px;
     border-radius: 50px;
     animation: fadeInAnimation 2.5s ease 1 forwards;
-    z-index:-10000;
+
 }
 
 @keyframes fadeInAnimation {
     0% {
         opacity: 1;
     }
-
-    40% {
-        opacity: 0.8;
+    70%{
+        opacity: 0.7;
     }
-
-    80% {
+    85%{
         opacity: 0.5;
     }
-
     100% {
         opacity: 0;
     }
@@ -222,6 +223,12 @@ p {
 }
 
 /*Restaurant*/
+
+h2 {
+    color: black;
+    font-family: 'Roboto Flex', 'sans serif';
+}
+
 .restaurants {
     background-color: #F2F2F2;
     padding: 25px;
@@ -244,6 +251,7 @@ p {
     align-items: center;
     width: 100%;
     gap: 2rem;
+
 }
 
 .choicerestaurant {
@@ -253,6 +261,7 @@ p {
     flex-direction: column;
     text-decoration: none;
     flex: 1 1 48%;
+    position: relative;
 }
 
 .imgcard {
@@ -272,28 +281,36 @@ p {
     border-radius: 3px;
     background-color: #99E2D0;
     position: absolute;
-}
-
-.btnheart {
-    position: absolute;
-    border: none;
-    font-size: x-large;
-    align-items: center;
+    top: 10px;
+    right: 10px;
 }
 
 .emptyheart {
+    font-size: x-large;
+    align-items: center;
+    border-color: black;
     position: absolute;
+    bottom: 40px;
+    right: 35px;
 }
 
 .fullheart {
+    font-size: x-large;
+    align-items: center;
     position: absolute;
-    opacity: 0;
-    transition: all 2s;
+    bottom: 40px;
+    right: 35px;
+    border-color:black;
+    color: transparent;
 }
 
-.fullheart:hover {
+.fullheart :hover {
     opacity: 1;
-    color: linear-gradient (to bottom, #FF79DA, #9356DC);
+    color: #9356DC;
+    /*background-image:linear-gradient(to bottom #9356DC, #FF79DA);
+    background-clip: text;
+    -webkit-background-clip: text;*/
+    transition: all 2s linear 0s;
 }
 
 .zonetext {
