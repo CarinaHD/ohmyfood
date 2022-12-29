@@ -44,6 +44,7 @@ body {
     justify-content: flex-start;
     position: relative;
     top: 35px;
+    margin-left: 20px;
 }
 
 .title {
@@ -107,10 +108,16 @@ body {
 .fullheart :hover {
     position: absolute;
     opacity: 1;
-    color: #9356DC;
+    /*color: #9356DC;
     background:linear-gradient(to bottom #9356DC,#FF79DA );
     background-clip:text;
-    -webkit-background-clip:text;
+    -webkit-background-clip:text;*/
+    background-clip: linear-gradient(50deg, #9356DC 65%, #FF79DA 35%);
+    color:transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
     transition: all 2s linear 0s;
 }
 
@@ -149,25 +156,32 @@ body {
     overflow: hidden;
     margin: 10px 10px 10px 0;
     box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 10%);
-    animation-name: slide-top;
-    animation-delay: 2500ms ;
-    /*animation-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);*/
-    animation-fill-mode: both;
+    animation: slide-top 1500ms both;
 }
 
 @keyframes slide-top {
     0% {
-        transform: translateY(50%);
+        transform: translateY(80%);
         opacity: 0.2;
     }
 50% {
-    transform: translateY(35%);
+    transform: translateY(25%);
         opacity: 0.5;
 }
     100% {
         transform: translateY(0);
         opacity: 1;
     }
+}
+
+.menulegend2{
+    animation: slide-top 2500ms both;
+}
+.menulegend3{
+    animation: slide-top 4000ms both;
+}
+.menulegend4{
+    animation:slide-top 5500ms both;
 }
 
 .menulegend-item {
@@ -202,10 +216,10 @@ body {
     font-size: 35px;
     overflow: hidden;
     width: 50%;
-    margin: -10px -190px -10px 0px;
+    /*margin: -10px -190px -10px 0px;*/
     position: relative;
     right: -5%;
-    transition: transform 0.5s ease-in;
+    transition: all 0.5s ease-in;
 }
 
 .fa-circle-check {
@@ -213,6 +227,17 @@ body {
     justify-content: center;
     background-color: #99E2D0;
     color: white;
+    animation: rotate-in-center 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes rotate-in-center {
+    0% {rotate:-360deg;
+    }
+
+    100% {
+        rotate: 0deg;
+    }
+
 }
 
 .circle-check {
@@ -223,13 +248,6 @@ body {
     background-color: white;
     width: 25px;
     height: 25px;
-    font-size: 18px;
-}
-
-@keyframes .circle-check {
-    transform: scale (.1);
-    transform: rotate(-90deg);
-    transition: tranform 330ms ease-in-out;
 }
 
 a {
@@ -253,7 +271,7 @@ a {
     color: white;
     background: linear-gradient(to bottom right, #FF79DA, #9356DC);
     box-shadow: grey 0px 8px 10px -5px;
-    margin: 0 25px 25px 35px;
+    margin: 25px 25px 25px 35px;
     cursor: pointer;
     justify-content: center;
     align-items: center;
@@ -269,7 +287,7 @@ a {
 
 /*Footer*/
 footer {
-    background-color: #5e5b5b;
+    background-color: #353535;
     color: white;
     justify-content: flex-start;
     text-align: left;
@@ -292,6 +310,7 @@ h4 {
 .listfooter {
     display: flex;
     list-style-type: none;
+
 }
 
 .footer-icon {
@@ -302,17 +321,20 @@ h4 {
     font-size: large;
 }
 
-.textfooter {
-    color: white;
+.textfooter{
+    font-family: 'Roboto Flex', 'sans serif';
     text-decoration: none;
+    color: white;
     align-items: flex-start;
     margin: 16px 0px;
 }
+
 
 @media (max-width:768px) {
     .ulfooter {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: left;
+        text-align: left;
     }
 }
