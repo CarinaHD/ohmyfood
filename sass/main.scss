@@ -139,6 +139,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 
 .sousmenu {
@@ -161,13 +162,10 @@ body {
 
 @keyframes slide-top {
     0% {
-        transform: translateY(80%);
-        opacity: 0.2;
+        transform: translateY(100px);
+        opacity: 0;
     }
-50% {
-    transform: translateY(25%);
-        opacity: 0.5;
-}
+
     100% {
         transform: translateY(0);
         opacity: 1;
@@ -175,23 +173,34 @@ body {
 }
 
 .menulegend2{
-    animation: slide-top 2500ms both;
+    animation: slide-top 500ms both;
 }
 .menulegend3{
-    animation: slide-top 4000ms both;
+    animation: slide-top 500ms 100ms both;
 }
 .menulegend4{
-    animation:slide-top 5500ms both;
+    animation:slide-top 500ms 200ms both;
+}
+
+.menulegend:hover .checkbutton{
+    margin:0;
 }
 
 .menulegend-item {
-    width: 100%;
+    width: 90%;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
         &:hover {
         transform: translate (100%)
     }
+}
+
+h3{
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .textlegend {
@@ -216,17 +225,21 @@ body {
     font-size: 35px;
     overflow: hidden;
     width: 50%;
-    /*margin: -10px -190px -10px 0px;*/
+    margin: -10px -190px -10px 0px;
     position: relative;
-    right: -5%;
+    right: -7%;
     transition: all 0.5s ease-in;
 }
+
 
 .fa-circle-check {
     display: flex;
     justify-content: center;
     background-color: #99E2D0;
     color: white;
+}
+
+.menulegend:hover .fa-circle-check {
     animation: rotate-in-center 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
@@ -310,7 +323,6 @@ h4 {
 .listfooter {
     display: flex;
     list-style-type: none;
-
 }
 
 .footer-icon {
@@ -319,6 +331,8 @@ h4 {
     background-color: transparent;
     border: none;
     font-size: large;
+    padding: 1px 6px;
+    margin:0;
 }
 
 .textfooter{
@@ -334,7 +348,5 @@ h4 {
     .ulfooter {
         display: flex;
         flex-direction: column;
-        align-items: left;
-        text-align: left;
     }
 }
