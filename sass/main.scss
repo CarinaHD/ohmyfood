@@ -81,45 +81,36 @@ body {
 
 .title-restaurant {
     font-family: 'Shrikhand','cursive';
-    padding-left: 25px;
 }
 
-.emptyheart {
-    position: absolute;
-    right: 50px;
-    top: 25px;
-    border: none;
+.far {
     font-size: x-large;
     align-items: center;
-    cursor: pointer;
+    border-color: black;
+    position: absolute;
+    right: 35px;
+    margin-top: 25px;
 }
 
-.fullheart {
-    position: absolute;
-    right: 50px;
-    top: 25px;
-    border: none;
+.fas {
     font-size: x-large;
     align-items: center;
-    cursor:pointer;
-    color: transparent;
+    position: absolute;
+    right: 35px;
+    margin-top: 25px;
+    border-color:black;
+    opacity:0;
+    transition-property: all;
+    transition-duration: 2s;
 }
 
-.fullheart :hover {
-    position: absolute;
+.fas:hover {
     opacity: 1;
-    /*color: #9356DC;
-    background:linear-gradient(to bottom #9356DC,#FF79DA );
+    color: transparent;
+    background-image:linear-gradient(to bottom, #9356DC,#FF79DA);
     background-clip:text;
-    -webkit-background-clip:text;*/
-    background-clip: linear-gradient(50deg, #9356DC 65%, #FF79DA 35%);
-    color:transparent;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-    transition: all 2s linear 0s;
-}
+    -webkit-background-clip:text;
+} 
 
 
 .menu-list {
@@ -132,6 +123,7 @@ body {
     position: relative;
     margin-top: -40px;
     padding-left: 15px;
+    padding-right: 15px;
     gap: 1rem;
 }
 
@@ -148,7 +140,7 @@ body {
 }
 
 .menulegend {
-    width: 75%;
+    width: 100%;
     display: flex;
     background: white;
     border-radius: 20px;
@@ -187,7 +179,7 @@ body {
 }
 
 .menulegend-item {
-    width: 90%;
+    width: 95%;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -224,23 +216,24 @@ h3{
     background-color: #99E2D0;
     font-size: 35px;
     overflow: hidden;
-    width: 50%;
-    margin: -10px -190px -10px 0px;
+    width: 26%;
+    margin: -10px -175px -10px 0px;
     position: relative;
     right: -7%;
-    transition: all 0.5s ease-in;
+    transition: all 500ms ease-in;
 }
 
 
 .fa-circle-check {
     display: flex;
+    place-items: center;
     justify-content: center;
     background-color: #99E2D0;
     color: white;
 }
 
 .menulegend:hover .fa-circle-check {
-    animation: rotate-in-center 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: rotate-in-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 @keyframes rotate-in-center {
@@ -255,12 +248,20 @@ h3{
 
 .circle-check {
     display: flex;
+    place-items: center;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
     background-color: white;
     width: 25px;
     height: 25px;
+    margin-right: 20px;
+}
+
+@media (max-width:768px) {
+    .circle-check{
+        margin-left: 15px;
+    }
 }
 
 a {
