@@ -224,9 +224,9 @@ p {
 .Fonctionnement {
     color: black;
     font-family: 'Roboto Flex', 'sans serif';
+    text-align: left;
     font-weight: bold;
     padding-left: 5px;
-    text-align: center;
 }
 
 /*Restaurant*/
@@ -234,7 +234,6 @@ p {
 h2 {
     color: black;
     font-family: 'Roboto Flex', 'sans serif';
-    text-align: center;
 }
 
 .restaurants {
@@ -351,8 +350,7 @@ footer {
 
 h4 {
     font-family: 'Shrikhand', 'sans serif';
-    font-size: 35px;
-    text-align: center;
+    font-size: x-large;
 }
 
 .ulfooter {
